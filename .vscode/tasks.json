@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build Signal_Mean",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "Signal_Mean.c",
+                "waveforms.c", // replace with the correct file if needed
+                "-o",
+                "Signal_Mean.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
